@@ -255,6 +255,13 @@
           action = "workspace";
         };
 
+        # kitty asks to be maximized, which made new windows cover the existing ones
+        window_rule = {
+          name = "suppress-maximize-events";
+          match.class = ".*";
+          suppress_event = "maximize";
+        };
+
         bind = map (args: {_args = args;}) (
           [
             ["SUPER + T" (mkLuaInline "hl.dsp.exec_cmd(terminal)")]

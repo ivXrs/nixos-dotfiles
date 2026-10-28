@@ -48,6 +48,11 @@ run from the repo root.
 ## git
 - commit scope = module or host (e.g. `feat(programs): add bat`, `fix(hosts/vm): ...`).
 - validation before committing: `nix flake check` and `alejandra --check .` must pass, and `repo-structure.md` must be up to date (refresh with the `repo-structure` skill).
+- exception, flake updates: when asked to update the system or the flake inputs, do not follow the `git-workflow` branch and pr flow.
+  - start from `main` with a clean working tree; otherwise stop and ask.
+  - run `nix flake update`, then `nix flake check` and `alejandra --check .`.
+  - if both pass, stage only `flake.lock`, commit `chore(nixos/flake): update system` straight on `main` and `git push`. no proposal or approval step: the request is the approval.
+  - if validation fails, do not commit; leave `flake.lock` as is and report the output.
 
 ## workflow
 - before editing any file, explain the change, its purpose and impact, and wait for explicit confirmation.

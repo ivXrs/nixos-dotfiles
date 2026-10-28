@@ -1,0 +1,121 @@
+# repo structure
+
+```
+.
+├── .claude
+│   └── agents
+│       └── Explore.md
+├── CLAUDE.md
+├── flake.lock
+├── flake.nix
+├── .gitignore
+├── homes
+│   └── aitor
+│       └── default.nix
+├── hosts
+│   ├── roxas
+│   │   ├── configuration.nix
+│   │   ├── default.nix
+│   │   ├── disko.nix
+│   │   └── hardware.nix
+│   └── vm
+│       ├── configuration.nix
+│       ├── default.nix
+│       ├── disko.nix
+│       └── hardware.nix
+├── install.sh
+├── LICENSE.txt
+├── .mcp.json
+├── modules
+│   ├── home-manager
+│   │   ├── atuin
+│   │   │   └── default.nix
+│   │   ├── default.nix
+│   │   ├── fzf
+│   │   │   └── default.nix
+│   │   ├── git
+│   │   │   └── default.nix
+│   │   ├── kitty
+│   │   │   └── default.nix
+│   │   ├── starship
+│   │   │   └── default.nix
+│   │   └── zsh
+│   │       └── default.nix
+│   └── nixos
+│       ├── audio
+│       │   └── default.nix
+│       ├── boot
+│       │   └── default.nix
+│       ├── desktop
+│       │   └── default.nix
+│       ├── fonts
+│       │   └── default.nix
+│       ├── home-manager
+│       │   └── default.nix
+│       ├── locale
+│       │   └── default.nix
+│       ├── network
+│       │   └── default.nix
+│       ├── nix
+│       │   └── default.nix
+│       ├── nvidia
+│       │   └── default.nix
+│       ├── programs
+│       │   ├── alejandra
+│       │   │   └── default.nix
+│       │   ├── bat
+│       │   │   └── default.nix
+│       │   ├── brave
+│       │   │   └── default.nix
+│       │   ├── btop
+│       │   │   └── default.nix
+│       │   ├── claude
+│       │   │   └── default.nix
+│       │   ├── default.nix
+│       │   ├── eza
+│       │   │   └── default.nix
+│       │   ├── fzf
+│       │   │   └── default.nix
+│       │   ├── gh
+│       │   │   └── default.nix
+│       │   ├── git
+│       │   │   └── default.nix
+│       │   ├── htop
+│       │   │   └── default.nix
+│       │   ├── kitty
+│       │   │   └── default.nix
+│       │   ├── libreoffice
+│       │   │   └── default.nix
+│       │   ├── neovim
+│       │   │   └── default.nix
+│       │   ├── nh
+│       │   │   └── default.nix
+│       │   ├── tailscale
+│       │   │   └── default.nix
+│       │   ├── tree
+│       │   │   └── default.nix
+│       │   ├── virtualbox
+│       │   │   └── default.nix
+│       │   └── zsh
+│       │       └── default.nix
+│       ├── suites
+│       │   ├── cli
+│       │   │   └── default.nix
+│       │   ├── coding
+│       │   │   └── default.nix
+│       │   ├── default.nix
+│       │   ├── desktop
+│       │   │   └── default.nix
+│       │   ├── virtualisation
+│       │   │   └── default.nix
+│       │   └── vpn
+│       │       └── default.nix
+│       └── users
+│           └── default.nix
+├── README_es.md
+├── README.md
+├── repo-structure.md
+└── templates
+    └── module
+        └── default.nix
+```

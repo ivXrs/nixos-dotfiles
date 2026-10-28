@@ -18,6 +18,7 @@ configuración personal de nixos gestionada como un flake. se construye a partir
 | `templates/module/` | punto de partida para nuevos módulos. |
 | `install.sh` | instala un host desde una iso live de nixos. borra un disco. |
 | `CLAUDE.md` | convenciones y reglas para la ia que trabaja en este repositorio. |
+| `repo-structure.md` | árbol generado de los archivos versionados, cargado por `CLAUDE.md`. |
 | `LICENSE.txt` | licencia mit. |
 
 ## hosts

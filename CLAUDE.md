@@ -16,8 +16,7 @@ run from the repo root.
 ## repo structure
 @repo-structure.md
 - use this tree to locate files instead of listing or exploring the repo; read only the files the task needs.
-- after adding, removing or renaming tracked files, `git add` them, regenerate the tree and include it in the same commit:
-  `{ printf '# repo structure\n\n```\n'; git ls-files | tree -a --fromfile . --noreport; printf '```\n'; } > repo-structure.md`
+- after adding, removing or renaming tracked files, `git add` them, refresh the tree with the `repo-structure` skill and include it in the same commit.
 
 ## architecture
 - `hosts/<host>/configuration.nix` imports the top-level nixos modules it uses and sets `irene.*` options.
@@ -48,7 +47,7 @@ run from the repo root.
 
 ## git
 - commit scope = module or host (e.g. `feat(programs): add bat`, `fix(hosts/vm): ...`).
-- validation before committing: `nix flake check` and `alejandra --check .` must pass, and `repo-structure.md` must be up to date (regenerate it, then `git diff --exit-code repo-structure.md`).
+- validation before committing: `nix flake check` and `alejandra --check .` must pass, and `repo-structure.md` must be up to date (refresh with the `repo-structure` skill).
 
 ## workflow
 - before editing any file, explain the change, its purpose and impact, and wait for explicit confirmation.

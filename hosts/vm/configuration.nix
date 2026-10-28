@@ -1,5 +1,6 @@
 {inputs, ...}: {
   imports = [
+    "${inputs.self}/modules/nixos/audio"
     "${inputs.self}/modules/nixos/boot"
     "${inputs.self}/modules/nixos/network"
     "${inputs.self}/modules/nixos/desktop"
@@ -12,6 +13,8 @@
   ];
 
   irene = {
+    audio.enable = true;
+
     boot.enable = true;
 
     network = {
@@ -45,8 +48,6 @@
         extraGroups = [
           "networkmanager"
           "wheel"
-          "video"
-          "input"
           "vboxsf"
         ];
         initialPassword = "1234";

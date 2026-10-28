@@ -12,6 +12,7 @@
       kitty.enable = true;
       libreoffice.enable = true;
       nautilus.enable = true;
+      noctalia.enable = true;
     };
   };
 }

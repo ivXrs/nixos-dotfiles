@@ -98,6 +98,8 @@
 │       │   │   └── default.nix
 │       │   ├── nh
 │       │   │   └── default.nix
+│       │   ├── noctalia
+│       │   │   └── default.nix
 │       │   ├── tailscale
 │       │   │   └── default.nix
 │       │   ├── tree

@@ -16,6 +16,7 @@
     ./nautilus
     ./neovim
     ./nh
+    ./noctalia
     ./tailscale
     ./tree
     ./virtualbox

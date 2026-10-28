@@ -267,9 +267,16 @@
             ["SUPER + T" (mkLuaInline "hl.dsp.exec_cmd(terminal)")]
             ["SUPER + F" (mkLuaInline "hl.dsp.exec_cmd(browser)")]
             ["SUPER + E" (mkLuaInline "hl.dsp.exec_cmd(fileManager)")]
-            ["SUPER + C" (mkLuaInline "hl.dsp.window.close()")]
+            ["SUPER + C" (mkLuaInline ''hl.dsp.exec_cmd("claude-desktop")'')]
+            ["SUPER + Q" (mkLuaInline "hl.dsp.window.close()")]
             ["SUPER + M" (mkLuaInline "hl.dsp.exit()")]
             ["SUPER + V" (mkLuaInline ''hl.dsp.window.float({ action = "toggle" })'')]
+
+            ["SUPER + Space" (mkLuaInline ''hl.dsp.exec_cmd("noctalia msg panel-toggle launcher")'')]
+            ["SUPER + S" (mkLuaInline ''hl.dsp.exec_cmd("noctalia msg panel-toggle control-center")'')]
+            ["ALT + Tab" (mkLuaInline ''hl.dsp.exec_cmd("noctalia msg window-switcher hold")'')]
+            ["SUPER + L" (mkLuaInline ''hl.dsp.exec_cmd("noctalia msg session lock")'')]
+            ["SUPER + SHIFT + S" (mkLuaInline ''hl.dsp.exec_cmd("noctalia msg screenshot-region")'')]
 
             ["SUPER + left" (mkLuaInline ''hl.dsp.focus({ direction = "left" })'')]
             ["SUPER + right" (mkLuaInline ''hl.dsp.focus({ direction = "right" })'')]
@@ -281,7 +288,7 @@
 
             [
               "XF86AudioRaiseVolume"
-              (mkLuaInline ''hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+")'')
+              (mkLuaInline ''hl.dsp.exec_cmd("noctalia msg volume-up")'')
               {
                 locked = true;
                 repeating = true;
@@ -289,7 +296,7 @@
             ]
             [
               "XF86AudioLowerVolume"
-              (mkLuaInline ''hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-")'')
+              (mkLuaInline ''hl.dsp.exec_cmd("noctalia msg volume-down")'')
               {
                 locked = true;
                 repeating = true;
@@ -297,7 +304,23 @@
             ]
             [
               "XF86AudioMute"
-              (mkLuaInline ''hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle")'')
+              (mkLuaInline ''hl.dsp.exec_cmd("noctalia msg volume-mute")'')
+              {
+                locked = true;
+                repeating = true;
+              }
+            ]
+            [
+              "XF86MonBrightnessUp"
+              (mkLuaInline ''hl.dsp.exec_cmd("noctalia msg brightness-up")'')
+              {
+                locked = true;
+                repeating = true;
+              }
+            ]
+            [
+              "XF86MonBrightnessDown"
+              (mkLuaInline ''hl.dsp.exec_cmd("noctalia msg brightness-down")'')
               {
                 locked = true;
                 repeating = true;

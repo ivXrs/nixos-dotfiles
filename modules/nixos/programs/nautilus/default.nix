@@ -1,0 +1,15 @@
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
+  options.irene.programs.nautilus.enable = lib.mkEnableOption "nautilus";
+
+  config = lib.mkIf config.irene.programs.nautilus.enable {
+    environment.systemPackages = [pkgs.nautilus];
+
+    # trash and mounts in nautilus
+    services.gvfs.enable = true;
+  };
+}

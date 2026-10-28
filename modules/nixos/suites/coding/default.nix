@@ -9,6 +9,7 @@
     irene.programs = {
       alejandra.enable = true;
       claude.enable = true;
+      gh.enable = true;
       git.enable = true;
       neovim.enable = true;
     };

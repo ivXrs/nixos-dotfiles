@@ -7,6 +7,7 @@
     ./claude
     ./eza
     ./fzf
+    ./gh
     ./git
     ./htop
     ./libreoffice

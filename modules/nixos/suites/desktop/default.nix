@@ -8,8 +8,10 @@
   config = lib.mkIf config.irene.suites.desktop.enable {
     irene.programs = {
       brave.enable = true;
+      hyprland.enable = true;
       kitty.enable = true;
       libreoffice.enable = true;
+      nautilus.enable = true;
     };
   };
 }

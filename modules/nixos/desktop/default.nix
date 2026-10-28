@@ -4,32 +4,17 @@
   pkgs,
   ...
 }: {
-  options.irene.desktop.enable = lib.mkEnableOption "desktop environment";
+  options.irene.desktop.enable = lib.mkEnableOption "desktop environment with greetd and tuigreet";
 
   config = lib.mkIf config.irene.desktop.enable {
     hardware.graphics.enable = true;
 
-    services = {
-      displayManager.gdm.enable = true;
-      desktopManager.gnome.enable = true;
+    services.greetd = {
+      enable = true;
+      settings.default_session = {
+        command = "${pkgs.tuigreet}/bin/tuigreet --time --remember --cmd Hyprland";
+        user = "greeter";
+      };
     };
-
-    environment.gnome.excludePackages = with pkgs; [
-      cheese
-      geary
-      gnome-boxes
-      gnome-calendar
-      gnome-characters
-      gnome-clocks
-      gnome-connections
-      gnome-contacts
-      gnome-logs
-      gnome-maps
-      gnome-music
-      gnome-tour
-      gnome-user-docs
-      gnome-weather
-      totem
-    ];
   };
 }

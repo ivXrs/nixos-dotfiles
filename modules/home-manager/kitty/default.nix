@@ -23,7 +23,7 @@
         cursor_blink_interval = "0.5 ease-in-out";
         cursor_stop_blinking_after = 0;
 
-        background_opacity = "0.95";
+        background_opacity = "0.85";
         window_padding_width = 8;
         confirm_os_window_close = 0;
         scrollback_lines = 10000;

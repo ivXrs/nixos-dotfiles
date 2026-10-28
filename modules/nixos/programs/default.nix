@@ -10,8 +10,10 @@
     ./gh
     ./git
     ./htop
+    ./hyprland
     ./kitty
     ./libreoffice
+    ./nautilus
     ./neovim
     ./nh
     ./tailscale

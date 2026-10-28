@@ -1,4 +1,8 @@
-{inputs, ...}: {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
   imports = [
     "${inputs.self}/modules/nixos/audio"
     "${inputs.self}/modules/nixos/boot"
@@ -51,6 +55,7 @@
           "vboxsf"
         ];
         initialPassword = "1234";
+        shell = pkgs.zsh;
       };
     };
   };

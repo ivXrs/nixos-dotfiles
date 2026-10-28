@@ -14,6 +14,7 @@
       htop.enable = true;
       nh.enable = true;
       tree.enable = true;
+      zsh.enable = true;
     };
   };
 }

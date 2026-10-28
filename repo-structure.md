@@ -37,6 +37,8 @@
 │   │   │   └── default.nix
 │   │   ├── git
 │   │   │   └── default.nix
+│   │   ├── hyprland
+│   │   │   └── default.nix
 │   │   ├── kitty
 │   │   │   └── default.nix
 │   │   ├── starship
@@ -84,9 +86,13 @@
 │       │   │   └── default.nix
 │       │   ├── htop
 │       │   │   └── default.nix
+│       │   ├── hyprland
+│       │   │   └── default.nix
 │       │   ├── kitty
 │       │   │   └── default.nix
 │       │   ├── libreoffice
+│       │   │   └── default.nix
+│       │   ├── nautilus
 │       │   │   └── default.nix
 │       │   ├── neovim
 │       │   │   └── default.nix

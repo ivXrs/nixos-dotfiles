@@ -23,6 +23,8 @@
     hardware.nvidia = {
       modesetting.enable = true;
       open = true;
+      # nvidia-settings is unfree and compiled locally on every nixpkgs bump
+      nvidiaSettings = false;
       package = config.boot.kernelPackages.nvidiaPackages.latest;
 
       powerManagement = {

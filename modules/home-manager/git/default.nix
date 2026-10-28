@@ -35,6 +35,10 @@
 
         init.defaultBranch = "main";
 
+        pull.ff = "only";
+
+        merge.ff = "only";
+
         core = {
           editor = "nvim";
           sshCommand = lib.mkIf (config.irene.home-manager.git.sshKey != null) "ssh -i ${config.irene.home-manager.git.sshKey} -o IdentitiesOnly=yes";

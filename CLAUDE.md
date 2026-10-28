@@ -45,6 +45,7 @@ run from the repo root.
 - commit messages: conventional commits in english lowercase, `<type>(<scope>): <summary>`, scope = module or host (e.g. `feat(programs): add bat`, `fix(hosts/vm): ...`).
 - commit only after `nix flake check` and `alejandra --check .` pass and the user approves the proposed message.
 - push only with explicit user approval. never force-push, rewrite pushed history, or skip hooks.
+- pull requests: after pushing, propose the title (same convention as commits) and description against `main`, and create it with `gh pr create` only after the user approves both. never merge it: the user merges.
 - stage files by name; do not use `git add -A` or `git add .`.
 
 ## workflow

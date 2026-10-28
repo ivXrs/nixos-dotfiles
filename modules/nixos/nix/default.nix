@@ -14,6 +14,7 @@
         "flakes"
       ];
       auto-optimise-store = true;
+      accept-flake-config = true;
     };
   };
 }

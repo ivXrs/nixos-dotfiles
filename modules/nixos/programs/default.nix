@@ -10,6 +10,7 @@
     ./gh
     ./git
     ./htop
+    ./kitty
     ./libreoffice
     ./neovim
     ./nh

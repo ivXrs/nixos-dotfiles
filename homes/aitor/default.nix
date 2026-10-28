@@ -13,6 +13,8 @@
       sshKey = "~/.ssh/id-github";
     };
 
+    kitty.enable = true;
+
     starship.enable = true;
 
     zsh.enable = true;

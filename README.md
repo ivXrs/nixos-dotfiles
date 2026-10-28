@@ -18,6 +18,7 @@ personal nixos configuration managed as a flake. it is built from small `irene` 
 | `templates/module/` | starting point for new modules. |
 | `install.sh` | installs a host from a nixos live iso. wipes a disk. |
 | `CLAUDE.md` | conventions and rules for the ai that works on this repo. |
+| `repo-structure.md` | generated tree of tracked files, loaded by `CLAUDE.md`. |
 | `LICENSE.txt` | mit license. |
 
 ## hosts

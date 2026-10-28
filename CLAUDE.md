@@ -41,12 +41,8 @@ run from the repo root.
 - never exceed the orchestrator's own model or effort. there is no native cap, so this rule is the only guard.
 
 ## git
-- never commit to `main`: branch from it as `<type>/<topic>` (e.g. `feat/bat`).
-- commit messages: conventional commits in english lowercase, `<type>(<scope>): <summary>`, scope = module or host (e.g. `feat(programs): add bat`, `fix(hosts/vm): ...`).
-- commit only after `nix flake check` and `alejandra --check .` pass and the user approves the proposed message.
-- push only with explicit user approval. never force-push, rewrite pushed history, or skip hooks.
-- pull requests: after pushing, propose the title (same convention as commits) and description against `main`, and create it with `gh pr create` only after the user approves both. to merge, propose the squash commit title and body, and run `gh pr merge --squash --delete-branch` only after the user approves both, so the remote branch is deleted with the merge. then update the local repo with `git switch main && git pull --prune`.
-- stage files by name; do not use `git add -A` or `git add .`.
+- commit scope = module or host (e.g. `feat(programs): add bat`, `fix(hosts/vm): ...`).
+- validation before committing: `nix flake check` and `alejandra --check .` must pass.
 
 ## workflow
 - before editing any file, explain the change, its purpose and impact, and wait for explicit confirmation.

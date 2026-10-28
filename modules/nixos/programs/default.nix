@@ -16,5 +16,6 @@
     ./tailscale
     ./tree
     ./virtualbox
+    ./zsh
   ];
 }

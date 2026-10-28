@@ -1,4 +1,8 @@
-{inputs, ...}: {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
   imports = [
     "${inputs.self}/modules/nixos/audio"
     "${inputs.self}/modules/nixos/boot"
@@ -59,6 +63,7 @@
           "wheel"
         ];
         initialPassword = "1234";
+        shell = pkgs.zsh;
       };
     };
   };

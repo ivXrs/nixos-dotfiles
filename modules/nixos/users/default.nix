@@ -1,6 +1,7 @@
 {
   config,
   lib,
+  pkgs,
   ...
 }: {
   options.irene.users = {
@@ -32,6 +33,12 @@
             default = null;
             description = "plain-text password set on first activation.";
           };
+
+          shell = lib.mkOption {
+            type = lib.types.package;
+            default = pkgs.bashInteractive;
+            description = "login shell of the user.";
+          };
         };
       }));
       default = {};
@@ -43,7 +50,7 @@
     users.users =
       lib.mapAttrs (_name: profile: {
         isNormalUser = true;
-        inherit (profile) description home extraGroups initialPassword;
+        inherit (profile) description home extraGroups initialPassword shell;
       })
       config.irene.users.profiles;
   };

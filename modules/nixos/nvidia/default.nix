@@ -39,5 +39,11 @@
         nvidiaBusId = config.irene.nvidia.nvidiaBusId;
       };
     };
+
+    users.users =
+      lib.mapAttrs (_name: _profile: {
+        extraGroups = ["video"];
+      })
+      config.irene.users.profiles;
   };
 }

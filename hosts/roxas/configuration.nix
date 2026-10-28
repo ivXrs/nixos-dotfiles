@@ -8,6 +8,7 @@
     "${inputs.self}/modules/nixos/boot"
     "${inputs.self}/modules/nixos/network"
     "${inputs.self}/modules/nixos/desktop"
+    "${inputs.self}/modules/nixos/fonts"
     "${inputs.self}/modules/nixos/home-manager"
     "${inputs.self}/modules/nixos/locale"
     "${inputs.self}/modules/nixos/nix"
@@ -28,6 +29,8 @@
     };
 
     desktop.enable = true;
+
+    fonts.enable = true;
 
     locale = {
       enable = true;

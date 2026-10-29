@@ -1,6 +1,7 @@
 {...}: {
   imports = [
     ./atuin
+    ./brave
     ./fzf
     ./git
     ./hyprland

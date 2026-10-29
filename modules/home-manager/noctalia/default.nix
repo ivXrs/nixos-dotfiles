@@ -37,7 +37,13 @@
           };
         };
 
-        theme.source = "wallpaper";
+        theme = {
+          source = "wallpaper";
+          templates = {
+            enable_builtin_templates = true;
+            builtin_ids = ["gtk3" "gtk4" "hyprland" "kitty" "qt"];
+          };
+        };
 
         wallpaper = {
           directory = "~/wallpapers";
@@ -66,5 +72,12 @@
         };
       };
     };
+
+    # the template hooks cannot edit read-only configs, so their includes are declared here and the hooks skip
+    programs.kitty.extraConfig = "include themes/noctalia.conf";
+    # rendered last so it overrides the border colors; pcall covers the time before the first render
+    wayland.windowManager.hyprland.extraConfig = ''
+      pcall(function() require("noctalia").apply_theme() end)
+    '';
   };
 }

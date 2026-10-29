@@ -7,6 +7,7 @@
     ./kitty
     ./noctalia
     ./starship
+    ./theming
     ./zsh
   ];
 }

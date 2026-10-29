@@ -21,6 +21,8 @@
 
     starship.enable = true;
 
+    theming.enable = true;
+
     zsh.enable = true;
   };
 }

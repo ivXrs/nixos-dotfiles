@@ -1,6 +1,7 @@
 {
   config,
   lib,
+  pkgs,
   ...
 }: {
   options.irene.nvidia = {
@@ -19,6 +20,12 @@
 
   config = lib.mkIf config.irene.nvidia.enable {
     services.xserver.videoDrivers = ["nvidia"];
+
+    # vaapi on the nvidia gpu, used with: LIBVA_DRIVER_NAME=nvidia nvidia-offload <app>
+    # LIBVA_DRIVER_NAME, __GLX_VENDOR_LIBRARY_NAME and GBM_BACKEND stay unset:
+    # with prime offload they would move every app to the dgpu
+    hardware.graphics.extraPackages = [pkgs.nvidia-vaapi-driver];
+    environment.sessionVariables.NVD_BACKEND = "direct";
 
     hardware.nvidia = {
       modesetting.enable = true;

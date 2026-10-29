@@ -40,8 +40,11 @@
 
     nix.enable = true;
 
-    # hidpi panel at scale 2
-    programs.hyprland.xwaylandScale = 2;
+    programs = {
+      # hidpi panel at scale 2
+      hyprland.xwaylandScale = 2;
+      tailscale.operator = "aitor";
+    };
 
     nvidia = {
       enable = true;

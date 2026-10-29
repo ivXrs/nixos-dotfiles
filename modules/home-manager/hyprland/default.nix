@@ -20,7 +20,7 @@
         # programs, rendered as lua locals
         terminal._var = "kitty";
         browser._var = "brave";
-        fileManager._var = "nautilus";
+        fileManager._var = "nautilus --new-window";
 
         monitor = {
           output = "";

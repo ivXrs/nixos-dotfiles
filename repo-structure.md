@@ -77,8 +77,6 @@
 │       │   │   └── default.nix
 │       │   ├── bat
 │       │   │   └── default.nix
-│       │   ├── bottles
-│       │   │   └── default.nix
 │       │   ├── brave
 │       │   │   └── default.nix
 │       │   ├── btop
@@ -103,6 +101,8 @@
 │       │   ├── kitty
 │       │   │   └── default.nix
 │       │   ├── libreoffice
+│       │   │   └── default.nix
+│       │   ├── lutris
 │       │   │   └── default.nix
 │       │   ├── nautilus
 │       │   │   └── default.nix

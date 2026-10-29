@@ -2,7 +2,6 @@
   imports = [
     ./alejandra
     ./bat
-    ./bottles
     ./brave
     ./btop
     ./claude
@@ -15,6 +14,7 @@
     ./hyprland
     ./kitty
     ./libreoffice
+    ./lutris
     ./nautilus
     ./neovim
     ./nh

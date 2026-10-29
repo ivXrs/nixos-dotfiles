@@ -40,6 +40,9 @@
 
     nix.enable = true;
 
+    # hidpi panel at scale 2
+    programs.hyprland.xwaylandScale = 2;
+
     nvidia = {
       enable = true;
       intelBusId = "PCI:0:2:0";

@@ -1,6 +1,8 @@
 {
   config,
   lib,
+  osConfig,
+  pkgs,
   ...
 }: {
   options.irene.home-manager.hyprland.enable = lib.mkEnableOption "hyprland";
@@ -73,6 +75,9 @@
           };
 
           animations.enabled = true;
+
+          # xwayland windows render at native resolution instead of being upscaled and blurry
+          xwayland.force_zero_scaling = true;
 
           # new windows go to the stack instead of becoming the master
           master.new_status = "slave";
@@ -332,6 +337,22 @@
           ++ builtins.genList (i: ["SUPER + SHIFT + ${toString (lib.mod (i + 1) 10)}" (mkLuaInline "hl.dsp.window.move({ workspace = ${toString (i + 1)} })")]) 10
         );
       };
+    };
+
+    # qt apps on xwayland (e.g. virtualbox) take their scale from Xft.dpi
+    systemd.user.services.xwayland-dpi = {
+      Unit = {
+        Description = "set Xft.dpi for xwayland apps";
+        PartOf = ["hyprland-session.target"];
+        After = ["hyprland-session.target"];
+      };
+      Service = {
+        Type = "oneshot";
+        ExecStart = toString (pkgs.writeShellScript "xwayland-dpi" ''
+          echo "Xft.dpi: ${toString (96 * osConfig.irene.programs.hyprland.xwaylandScale)}" | ${pkgs.xrdb}/bin/xrdb -merge
+        '');
+      };
+      Install.WantedBy = ["hyprland-session.target"];
     };
   };
 }

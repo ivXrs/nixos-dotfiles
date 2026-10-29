@@ -77,6 +77,8 @@
 │       │   │   └── default.nix
 │       │   ├── bat
 │       │   │   └── default.nix
+│       │   ├── bottles
+│       │   │   └── default.nix
 │       │   ├── brave
 │       │   │   └── default.nix
 │       │   ├── btop
@@ -127,6 +129,8 @@
 │       │   │   └── default.nix
 │       │   ├── default.nix
 │       │   ├── desktop
+│       │   │   └── default.nix
+│       │   ├── gaming
 │       │   │   └── default.nix
 │       │   ├── virtualisation
 │       │   │   └── default.nix

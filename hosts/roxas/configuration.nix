@@ -58,6 +58,7 @@
       coding.enable = true;
       cli.enable = true;
       desktop.enable = true;
+      gaming.enable = true;
       virtualisation.enable = true;
       vpn.enable = true;
     };

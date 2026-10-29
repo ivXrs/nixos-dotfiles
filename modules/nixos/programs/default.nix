@@ -2,6 +2,7 @@
   imports = [
     ./alejandra
     ./bat
+    ./bottles
     ./brave
     ./btop
     ./claude

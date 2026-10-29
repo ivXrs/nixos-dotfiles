@@ -5,6 +5,7 @@
     ./git
     ./hyprland
     ./kitty
+    ./noctalia
     ./starship
     ./zsh
   ];

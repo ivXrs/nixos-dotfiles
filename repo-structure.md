@@ -45,6 +45,8 @@
 │   │   │   └── default.nix
 │   │   ├── starship
 │   │   │   └── default.nix
+│   │   ├── theming
+│   │   │   └── default.nix
 │   │   └── zsh
 │   │       └── default.nix
 │   └── nixos

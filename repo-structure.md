@@ -41,6 +41,8 @@
 │   │   │   └── default.nix
 │   │   ├── kitty
 │   │   │   └── default.nix
+│   │   ├── noctalia
+│   │   │   └── default.nix
 │   │   ├── starship
 │   │   │   └── default.nix
 │   │   └── zsh

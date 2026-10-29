@@ -17,6 +17,8 @@
 
     kitty.enable = true;
 
+    noctalia.enable = true;
+
     starship.enable = true;
 
     zsh.enable = true;

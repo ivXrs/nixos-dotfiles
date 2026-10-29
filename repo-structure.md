@@ -82,6 +82,8 @@
 │       │   ├── default.nix
 │       │   ├── eza
 │       │   │   └── default.nix
+│       │   ├── fastfetch
+│       │   │   └── default.nix
 │       │   ├── fzf
 │       │   │   └── default.nix
 │       │   ├── gh

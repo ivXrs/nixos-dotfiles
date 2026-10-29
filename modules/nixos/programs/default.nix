@@ -6,6 +6,7 @@
     ./btop
     ./claude
     ./eza
+    ./fastfetch
     ./fzf
     ./gh
     ./git

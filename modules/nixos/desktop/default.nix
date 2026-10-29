@@ -6,7 +6,10 @@
   options.irene.desktop.enable = lib.mkEnableOption "desktop environment with greetd and noctalia-greeter";
 
   config = lib.mkIf config.irene.desktop.enable {
-    hardware.graphics.enable = true;
+    hardware.graphics = {
+      enable = true;
+      enable32Bit = true;
+    };
 
     services.displayManager.noctalia-greeter = {
       enable = true;

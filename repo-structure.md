@@ -32,6 +32,8 @@
 │   ├── home-manager
 │   │   ├── atuin
 │   │   │   └── default.nix
+│   │   ├── brave
+│   │   │   └── default.nix
 │   │   ├── default.nix
 │   │   ├── fzf
 │   │   │   └── default.nix

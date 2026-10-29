@@ -4,6 +4,8 @@
   irene.home-manager = {
     atuin.enable = true;
 
+    brave.enable = true;
+
     fzf.enable = true;
 
     git = {

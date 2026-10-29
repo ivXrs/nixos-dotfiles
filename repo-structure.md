@@ -49,6 +49,8 @@
 │   │   │   └── default.nix
 │   │   ├── theming
 │   │   │   └── default.nix
+│   │   ├── vesktop
+│   │   │   └── default.nix
 │   │   └── zsh
 │   │       └── default.nix
 │   └── nixos
@@ -111,6 +113,8 @@
 │       │   ├── tailscale
 │       │   │   └── default.nix
 │       │   ├── tree
+│       │   │   └── default.nix
+│       │   ├── vesktop
 │       │   │   └── default.nix
 │       │   ├── virtualbox
 │       │   │   └── default.nix

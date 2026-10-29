@@ -13,6 +13,7 @@
       libreoffice.enable = true;
       nautilus.enable = true;
       noctalia.enable = true;
+      vesktop.enable = true;
     };
   };
 }

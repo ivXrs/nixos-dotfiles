@@ -25,6 +25,8 @@
 
     theming.enable = true;
 
+    vesktop.enable = true;
+
     zsh.enable = true;
   };
 }

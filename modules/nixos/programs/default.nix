@@ -20,6 +20,7 @@
     ./noctalia
     ./tailscale
     ./tree
+    ./vesktop
     ./virtualbox
     ./zsh
   ];

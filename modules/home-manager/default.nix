@@ -9,6 +9,7 @@
     ./noctalia
     ./starship
     ./theming
+    ./vesktop
     ./zsh
   ];
 }

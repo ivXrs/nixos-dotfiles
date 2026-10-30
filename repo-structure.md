@@ -85,8 +85,6 @@
 │       │   │   └── default.nix
 │       │   ├── claude
 │       │   │   └── default.nix
-│       │   ├── curl
-│       │   │   └── default.nix
 │       │   ├── default.nix
 │       │   ├── eza
 │       │   │   └── default.nix

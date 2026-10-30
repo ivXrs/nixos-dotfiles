@@ -9,7 +9,6 @@
     irene.programs = {
       bat.enable = true;
       btop.enable = true;
-      curl.enable = true;
       eza.enable = true;
       fastfetch.enable = true;
       fzf.enable = true;

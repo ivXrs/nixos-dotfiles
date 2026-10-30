@@ -21,12 +21,15 @@
     ./neovim
     ./nh
     ./noctalia
+    ./nodejs
     ./papers
+    ./python
     ./tailscale
     ./tree
     ./vesktop
     ./virtualbox
     ./vlc
+    ./zapzap
     ./zsh
   ];
 }

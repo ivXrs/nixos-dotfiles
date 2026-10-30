@@ -17,6 +17,7 @@
       papers.enable = true;
       vesktop.enable = true;
       vlc.enable = true;
+      zapzap.enable = true;
     };
   };
 }

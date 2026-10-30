@@ -14,15 +14,18 @@
     ./hyprland
     ./kitty
     ./libreoffice
+    ./loupe
     ./lutris
     ./nautilus
     ./neovim
     ./nh
     ./noctalia
+    ./papers
     ./tailscale
     ./tree
     ./vesktop
     ./virtualbox
+    ./vlc
     ./zsh
   ];
 }

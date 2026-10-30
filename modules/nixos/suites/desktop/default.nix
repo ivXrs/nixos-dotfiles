@@ -11,9 +11,12 @@
       hyprland.enable = true;
       kitty.enable = true;
       libreoffice.enable = true;
+      loupe.enable = true;
       nautilus.enable = true;
       noctalia.enable = true;
+      papers.enable = true;
       vesktop.enable = true;
+      vlc.enable = true;
     };
   };
 }

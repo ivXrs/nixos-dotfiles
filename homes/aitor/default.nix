@@ -19,6 +19,8 @@
 
     kitty.enable = true;
 
+    mime-apps.enable = true;
+
     noctalia.enable = true;
 
     starship.enable = true;

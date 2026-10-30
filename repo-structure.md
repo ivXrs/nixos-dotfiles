@@ -43,6 +43,8 @@
 │   │   │   └── default.nix
 │   │   ├── kitty
 │   │   │   └── default.nix
+│   │   ├── mime-apps
+│   │   │   └── default.nix
 │   │   ├── noctalia
 │   │   │   └── default.nix
 │   │   ├── starship
@@ -102,6 +104,8 @@
 │       │   │   └── default.nix
 │       │   ├── libreoffice
 │       │   │   └── default.nix
+│       │   ├── loupe
+│       │   │   └── default.nix
 │       │   ├── lutris
 │       │   │   └── default.nix
 │       │   ├── nautilus
@@ -112,6 +116,8 @@
 │       │   │   └── default.nix
 │       │   ├── noctalia
 │       │   │   └── default.nix
+│       │   ├── papers
+│       │   │   └── default.nix
 │       │   ├── tailscale
 │       │   │   └── default.nix
 │       │   ├── tree
@@ -119,6 +125,8 @@
 │       │   ├── vesktop
 │       │   │   └── default.nix
 │       │   ├── virtualbox
+│       │   │   └── default.nix
+│       │   ├── vlc
 │       │   │   └── default.nix
 │       │   └── zsh
 │       │       └── default.nix

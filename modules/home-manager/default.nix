@@ -6,6 +6,7 @@
     ./git
     ./hyprland
     ./kitty
+    ./mime-apps
     ./noctalia
     ./starship
     ./theming

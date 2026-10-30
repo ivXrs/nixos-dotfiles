@@ -118,7 +118,11 @@
 │       │   │   └── default.nix
 │       │   ├── noctalia
 │       │   │   └── default.nix
+│       │   ├── nodejs
+│       │   │   └── default.nix
 │       │   ├── papers
+│       │   │   └── default.nix
+│       │   ├── python
 │       │   │   └── default.nix
 │       │   ├── tailscale
 │       │   │   └── default.nix
@@ -129,6 +133,8 @@
 │       │   ├── virtualbox
 │       │   │   └── default.nix
 │       │   ├── vlc
+│       │   │   └── default.nix
+│       │   ├── zapzap
 │       │   │   └── default.nix
 │       │   └── zsh
 │       │       └── default.nix

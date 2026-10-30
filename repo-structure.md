@@ -85,6 +85,8 @@
 │       │   │   └── default.nix
 │       │   ├── claude
 │       │   │   └── default.nix
+│       │   ├── curl
+│       │   │   └── default.nix
 │       │   ├── default.nix
 │       │   ├── eza
 │       │   │   └── default.nix
@@ -99,6 +101,8 @@
 │       │   ├── htop
 │       │   │   └── default.nix
 │       │   ├── hyprland
+│       │   │   └── default.nix
+│       │   ├── jq
 │       │   │   └── default.nix
 │       │   ├── kitty
 │       │   │   └── default.nix

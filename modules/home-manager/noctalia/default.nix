@@ -1,6 +1,7 @@
 {
   config,
   lib,
+  osConfig,
   ...
 }: {
   options.irene.home-manager.noctalia.enable = lib.mkEnableOption "noctalia";
@@ -13,7 +14,7 @@
       settings = {
         bar.default = {
           capsule = true;
-          start = ["control-center" "workspaces" "privacy"];
+          start = ["control-center" "workspaces" "privacy"] ++ lib.optional osConfig.irene.programs.claude.enable "pill";
           center = ["media" "clock" "notifications"];
           end = ["bar" "tray" "clipboard" "network" "bluetooth" "brightness" "volume" "battery" "session"];
           margin_ends = 0;
@@ -26,11 +27,12 @@
         osd.kinds.lock_keys = false;
 
         # the plugin itself is downloaded by noctalia at runtime
-        plugins.enabled = ["rylos/tailnet"];
+        plugins.enabled = ["rylos/tailnet"] ++ lib.optional osConfig.irene.programs.claude.enable "jrohland/claudecode";
 
         shell = {
           font_family = "Ubuntu Nerd Font";
           polkit_agent = true;
+          clipboard_auto_paste = "off";
           launcher = {
             category_icons_only = true;
             layout = "simple";
@@ -64,6 +66,11 @@
           media.hide_when_no_media = true;
           network.show_label = false;
           notifications.hide_when_no_unread = true;
+          pill = lib.mkIf osConfig.irene.programs.claude.enable {
+            pill_metric = "both";
+            pill_style = "ring_text";
+            type = "jrohland/claudecode:pill";
+          };
           privacy.hide_inactive = true;
           sysmon.visualization = "none";
         };

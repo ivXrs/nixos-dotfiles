@@ -5,6 +5,7 @@
     ./brave
     ./btop
     ./claude
+    ./curl
     ./eza
     ./fastfetch
     ./fzf
@@ -12,6 +13,7 @@
     ./git
     ./htop
     ./hyprland
+    ./jq
     ./kitty
     ./libreoffice
     ./loupe

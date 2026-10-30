@@ -26,7 +26,7 @@
 
         osd.kinds.lock_keys = false;
 
-        # the plugin itself is downloaded by noctalia at runtime
+        # plugins are downloaded by noctalia at runtime
         plugins.enabled = ["rylos/tailnet"] ++ lib.optional osConfig.irene.programs.claude.enable "jrohland/claudecode";
 
         shell = {

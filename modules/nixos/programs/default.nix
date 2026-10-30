@@ -5,7 +5,6 @@
     ./brave
     ./btop
     ./claude
-    ./curl
     ./eza
     ./fastfetch
     ./fzf

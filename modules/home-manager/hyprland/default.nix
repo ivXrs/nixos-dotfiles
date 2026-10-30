@@ -18,7 +18,7 @@
 
       settings = {
         # programs, rendered as lua locals
-        terminal._var = "kitty";
+        terminal._var = osConfig.irene.desktop.terminal;
         browser._var = "brave";
         fileManager._var = "nautilus --new-window";
 

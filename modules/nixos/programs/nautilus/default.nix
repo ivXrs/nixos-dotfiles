@@ -11,5 +11,10 @@
 
     # trash and mounts in nautilus
     services.gvfs.enable = true;
+
+    programs.nautilus-open-any-terminal = {
+      enable = true;
+      terminal = config.irene.desktop.terminal;
+    };
   };
 }

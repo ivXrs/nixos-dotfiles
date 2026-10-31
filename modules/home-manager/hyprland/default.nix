@@ -69,6 +69,8 @@
 
           animations.enabled = true;
 
+          render.cm_auto_hdr = 0;
+
           # xwayland windows render at native resolution instead of being upscaled and blurry
           xwayland.force_zero_scaling = true;
 
@@ -255,11 +257,25 @@
         };
 
         # kitty asks to be maximized, which made new windows cover the existing ones
-        window_rule = {
-          name = "suppress-maximize-events";
-          match.class = ".*";
-          suppress_event = "maximize";
-        };
+        window_rule = [
+          {
+            name = "suppress-maximize-events";
+            match.class = ".*";
+            suppress_event = "maximize";
+          }
+          {
+            name = "float-bitwarden";
+            match.class = "^.+-nngceckbapebfimnlniiiahkandclblb-.+$";
+            float = true;
+            center = true;
+          }
+          {
+            name = "float-file-dialogs";
+            match.class = "^xdg-desktop-portal-gtk$";
+            float = true;
+            center = true;
+          }
+        ];
 
         bind = map (args: {_args = args;}) (
           [

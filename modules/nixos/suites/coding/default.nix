@@ -11,6 +11,7 @@
       claude.enable = true;
       gh.enable = true;
       git.enable = true;
+      markitdown.enable = true;
       neovim.enable = true;
       nodejs.enable = true;
       python.enable = true;

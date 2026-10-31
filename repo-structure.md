@@ -110,6 +110,8 @@
 │       │   │   └── default.nix
 │       │   ├── lutris
 │       │   │   └── default.nix
+│       │   ├── markitdown
+│       │   │   └── default.nix
 │       │   ├── nautilus
 │       │   │   └── default.nix
 │       │   ├── neovim

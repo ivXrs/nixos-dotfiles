@@ -84,6 +84,7 @@
             kb_layout = "es";
             follow_mouse = 1;
             sensitivity = 0;
+            accel_profile = "flat";
             touchpad.natural_scroll = false;
           };
         };
@@ -268,9 +269,10 @@
             ["SUPER + C" (mkLuaInline ''hl.dsp.exec_cmd("claude-desktop")'')]
             ["SUPER + Q" (mkLuaInline "hl.dsp.window.close()")]
             ["SUPER + M" (mkLuaInline "hl.dsp.exit()")]
-            ["SUPER + V" (mkLuaInline ''hl.dsp.window.float({ action = "toggle" })'')]
+            ["SUPER + SHIFT + V" (mkLuaInline ''hl.dsp.window.float({ action = "toggle" })'')]
 
             ["SUPER + Space" (mkLuaInline ''hl.dsp.exec_cmd("noctalia msg panel-toggle launcher")'')]
+            ["SUPER + V" (mkLuaInline ''hl.dsp.exec_cmd("noctalia msg panel-toggle clipboard")'')]
             ["SUPER + S" (mkLuaInline ''hl.dsp.exec_cmd("noctalia msg panel-toggle control-center")'')]
             ["ALT + Tab" (mkLuaInline ''hl.dsp.exec_cmd("noctalia msg window-switcher hold")'')]
             ["SUPER + L" (mkLuaInline ''hl.dsp.exec_cmd("noctalia msg session lock")'')]

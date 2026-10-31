@@ -17,6 +17,7 @@
     ./libreoffice
     ./loupe
     ./lutris
+    ./markitdown
     ./nautilus
     ./neovim
     ./nh
